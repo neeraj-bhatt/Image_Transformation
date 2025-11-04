@@ -24,7 +24,7 @@ with col1:
     # Display the uploaded image
         image = Image.open(uploaded_image)
         #Display the image
-        st.image(image, caption="Uploaded Image", width=400, use_container_width=False, output_format="auto")
+        st.image(image, caption="Uploaded Image", width=400, output_format="auto")
 
 with col2:
     st.subheader("Processed Grayscale Image")
@@ -32,7 +32,7 @@ with col2:
     # Display the processed image
         processed_image_matrix = load_and_process_image(uploaded_image)
         processed_image = Image.fromarray(processed_image_matrix)
-        st.image(processed_image, caption="Grayscale Image", width=400, use_container_width=False, output_format="auto")
+        st.image(processed_image, caption="Grayscale Image", width=400, output_format="auto")
 
 st.markdown("---")
 st.title("Transformation Menu")
