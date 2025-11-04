@@ -3,7 +3,7 @@ from PIL import Image
 import sys
 import os
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+# sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
 from core.image_transformation import load_and_process_image, rotate_image, translate_image, scale_image
 
 st.set_page_config(page_title="Basic Image Transformation", layout="wide")
