@@ -65,7 +65,7 @@ with tab2:
 with tab3:
     st.write("Apply Scaling on an Image")
     if uploaded_image is not None:
-        scaling_factor = st.number_input("Enter Scaling factor")
+        scaling_factor = st.number_input("Enter Scaling factor",value=1.0)
         if st.button("Apply Scaling", key="scale"):
             with st.spinner("Applying Image Scaling..."):
                 scale_image_matrix = scale_image(processed_image_matrix, scaling_factor)
